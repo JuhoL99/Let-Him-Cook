@@ -7,18 +7,24 @@ public class Movement : MonoBehaviour
 {
     public float movementSpeed, mouseSensitivity;
     Transform cam;
-    CharacterController characterController;
+    CharacterController cc;
     float xRot,yRot;
+    float gravity;
     void Start()
     {
         cam = transform.GetChild(0);
-        characterController = GetComponent<CharacterController>();
+        cc = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
     }
     void Update()
     {
         DirectionalMovement();
         CameraRotation();
+    }
+    private void FixedUpdate()
+    {
+        //DirectionalMovement();
+        //CameraRotation();
     }
     void DirectionalMovement()
     {
@@ -28,7 +34,7 @@ public class Movement : MonoBehaviour
         Vector3 forward = Vector3.Cross(right, Vector3.up);
         Vector3 movedir3d = hori * right +verti*forward;
         Vector3 movedir = new Vector3(movedir3d.x, 0,movedir3d.z).normalized;
-        characterController.Move(movedir * movementSpeed * Time.deltaTime);
+        cc.Move(movedir * movementSpeed * Time.deltaTime);
     }
     void CameraRotation()
     {

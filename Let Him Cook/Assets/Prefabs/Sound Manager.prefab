@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   source: {fileID: 3843330839724866332}
-  bgMusic: {fileID: 8137461364677798285}
-  bgClip: {fileID: 0}
+  bgSource: {fileID: 8137461364677798285}
+  bgClip: {fileID: 8300000, guid: a58a10a89f41e714b980c7412208f66e, type: 3}
 --- !u!82 &3843330839724866332
 AudioSource:
   m_ObjectHideFlags: 0

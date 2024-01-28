@@ -6,7 +6,7 @@ public class SoundFXManager : MonoBehaviour
 {
     public static SoundFXManager instance;
     public AudioSource source;
-    public AudioSource bgMusic;
+    public AudioSource bgSource;
     public AudioClip bgClip;
     private void Awake()
     {
@@ -22,8 +22,8 @@ public class SoundFXManager : MonoBehaviour
     }
     private void Start()
     {
-        bgMusic.clip = bgClip;
-        bgMusic.Play();
+        bgSource.clip = bgClip;
+        bgSource.Play();
     }
 
     public void PlaySoundFX(AudioClip clip)

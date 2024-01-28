@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class CustomerManager : MonoBehaviour
@@ -14,16 +15,18 @@ public class CustomerManager : MonoBehaviour
     public float slideT;
     public bool missionStarted;
     string good, mid, bad;
+    TextMeshProUGUI tmp;
     private void Start()
     {
+        tmp = GameObject.Find("Canvas").transform.GetChild(2).GetComponent<TextMeshProUGUI>();
         Invoke("SpawnCustomer", 2f);
     }
     public void SpawnCustomer()
     {
         int customerID = Random.Range(0, JSONParser.customers.Length);
-        int clothes = JSONParser.customers[customerID].CLOTHES;
+        int clothes = JSONParser.customers[customerID].PERSONALITY;
         int age = JSONParser.customers[customerID].AGE;
-        int personality = JSONParser.customers[customerID].PERSONALITY;
+        int personality = JSONParser.customers[customerID].CLOTHES;
         string line = JSONParser.customers[customerID].LINE;
         good = JSONParser.customers[customerID].GOOD;
         mid = JSONParser.customers[customerID].MID;
@@ -45,31 +48,43 @@ public class CustomerManager : MonoBehaviour
     {
         missionStarted = true;
         SayDialogue(currentLine);
+        Debug.Log("Customer options: " + currentOptions);
     }
     public void EndMission(IngredientAttributes ia)
     {
         Vector3Int playerOptions = new Vector3Int(ia.ingredient, ia.cookMethod, ia.seasoning);
+        Debug.Log("Clothes-Ingredient: " + currentOptions.x + "-" + playerOptions.x);
+        Debug.Log("Age-CookMethod: " + currentOptions.x + "-" + playerOptions.x);
+        Debug.Log("Personality-Seasoning: " + currentOptions.x + "-" + playerOptions.x);
         currentOptions += Vector3Int.one;
         int score = 0;
         if (playerOptions.x == currentOptions.x) score++;
         if (playerOptions.y == currentOptions.y) score++;
         if (playerOptions.z == currentOptions.z) score++;
+        string endDialogue;
         if (score == 3)
         {
-            SayDialogue(good);
+            endDialogue = good;
         }
         else if (score == 2)
         {
-            SayDialogue(mid);
+            endDialogue = mid;
         }
         else
         {
-            SayDialogue(bad);
+            endDialogue = bad;
         }
+        SayDialogue(endDialogue + "\nScore: " + score);
+
         missionStarted = false;
+        Invoke("ClearDialogue", 3f);
     }
     public void SayDialogue(string dialogue)
     {
-        Debug.Log($"{dialogue}");
+        tmp.text = dialogue;
+    }
+    void ClearDialogue()
+    {
+        tmp.text = "";
     }
 }

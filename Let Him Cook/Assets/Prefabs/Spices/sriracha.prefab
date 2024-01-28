@@ -188,7 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b805ac4e6ea9314ca3bdf06240b02a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spiceNum: 3
+  spiceNum: 1
   particleEffect: {fileID: 7465721461647497874, guid: 0b3cb9d864cb20644bd6ab39be4cb054,
     type: 3}
   spiceTextureColor: {r: 1, g: 0, b: 0, a: 1}

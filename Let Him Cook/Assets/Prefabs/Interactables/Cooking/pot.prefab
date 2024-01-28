@@ -205,6 +205,4 @@ MonoBehaviour:
   cookMethod: 3
   runtime: 3
   launchDirection: {x: 0, y: 1, z: 1}
-  cookPoint: {fileID: 0}
-  spawnPoint: {fileID: 0}
   cookedMaterial: {fileID: 2100000, guid: 6ffe635923425bb42980d3e2f2e7bbaf, type: 2}

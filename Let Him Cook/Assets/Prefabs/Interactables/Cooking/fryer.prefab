@@ -319,11 +319,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7c36e6813a3a64ebbac89608ccefed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookMethod: 2
+  cookMethod: 1
   runtime: 3
   launchDirection: {x: 0, y: 1, z: 1}
-  cookPoint: {fileID: 0}
-  spawnPoint: {fileID: 0}
   cookedMaterial: {fileID: 2100000, guid: f7942f1060e92af44b58bb9464b7050e, type: 2}
 --- !u!1001 &4450249700010662347
 PrefabInstance:

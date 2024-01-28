@@ -163,7 +163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cookMethod: 0
   seasoning: 0
-  ingredient: 2
+  ingredient: 3
 --- !u!114 &5147434190221727367
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -190,7 +190,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7c36e6813a3a64ebbac89608ccefed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookMethod: 0
+  cookMethod: 2
   runtime: 3
   launchDirection: {x: 0, y: 1, z: 1}
   cookedMaterial: {fileID: 2100000, guid: 956cc9ae740f577469560bc7632dff9e, type: 2}

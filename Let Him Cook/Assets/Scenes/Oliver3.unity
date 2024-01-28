@@ -1040,40 +1040,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89fe73a264c6fbb4b9ae25215c3a72c3, type: 3}
---- !u!1 &1077197048 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5413365201088732281, guid: 999c6baf880f97541975c9b877bd0cc0,
-    type: 3}
-  m_PrefabInstance: {fileID: 7636478190178091788}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1077197051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1077197048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ff7e398d58fd6644ad13159a4435b88, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  JSONParser: {fileID: 400983305}
-  bodies:
-  - {fileID: 919132149155446097, guid: 7379931702ae6754cbbd2526ea60c969, type: 3}
-  - {fileID: 919132149155446097, guid: e5da35676fca96c4a801bc9d3e1e9844, type: 3}
-  - {fileID: 919132149155446097, guid: 5d405310e9e99b9439ac54eaba95a615, type: 3}
-  faces:
-  - {fileID: 919132149155446097, guid: 27446cf8b3bd6e74dabaa8041c22c7a5, type: 3}
-  - {fileID: 919132149155446097, guid: e4656727f6cefa14f95be3a68e236937, type: 3}
-  - {fileID: 919132149155446097, guid: 503c1cbd44553b543b3092d5a5766d6a, type: 3}
-  customerTemplate: {fileID: 4570510193679052506, guid: 473bbcdeb93da3945a4965ab5b9c15b9,
-    type: 3}
-  activeCustomer: 0
-  currentLine: 
-  spawnTransform: {fileID: 539978547}
-  behindCounterTransform: {fileID: 1701439232}
-  slideT: 0.1
 --- !u!224 &1433117793 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 1133323476880452172, guid: 78e1ddc5a853d45428ec1359d9614abe,
@@ -2113,39 +2079,9 @@ PrefabInstance:
       objectReference: {fileID: 1974246031}
     - target: {fileID: 487822693822936466, guid: 999c6baf880f97541975c9b877bd0cc0,
         type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 487822693822936466, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
       propertyPath: JSONParser
       value: 
       objectReference: {fileID: 400983305}
-    - target: {fileID: 487822693822936466, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      propertyPath: spawnPos.x
-      value: 2.317
-      objectReference: {fileID: 0}
-    - target: {fileID: 487822693822936466, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      propertyPath: spawnPos.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 487822693822936466, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      propertyPath: spawnPos.z
-      value: -2.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511740710424200362, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2.317
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511740710424200362, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: -2.36
-      objectReference: {fileID: 0}
     - target: {fileID: 2511740710424200362, guid: 999c6baf880f97541975c9b877bd0cc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2201,14 +2137,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: Customer Manager
       objectReference: {fileID: 0}
+    - target: {fileID: 7797674910287642374, guid: 999c6baf880f97541975c9b877bd0cc0,
+        type: 3}
+      propertyPath: JSONParser
+      value: 
+      objectReference: {fileID: 400983305}
+    - target: {fileID: 7797674910287642374, guid: 999c6baf880f97541975c9b877bd0cc0,
+        type: 3}
+      propertyPath: spawnTransform
+      value: 
+      objectReference: {fileID: 539978547}
+    - target: {fileID: 7797674910287642374, guid: 999c6baf880f97541975c9b877bd0cc0,
+        type: 3}
+      propertyPath: behindCounterTransform
+      value: 
+      objectReference: {fileID: 1701439232}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5413365201088732281, guid: 999c6baf880f97541975c9b877bd0cc0,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1077197051}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 999c6baf880f97541975c9b877bd0cc0, type: 3}
 --- !u!1001 &8197874783244916104
 PrefabInstance:

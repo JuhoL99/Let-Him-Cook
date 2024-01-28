@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2511740710424200362}
   - component: {fileID: 487822693822936466}
+  - component: {fileID: 7797674910287642374}
   m_Layer: 0
   m_Name: Customer Manager
   m_TagString: Untagged
@@ -27,7 +28,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -23.243273, y: -12.348894, z: -3.9797122}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 2.317, y: 1, z: -2.36}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -39,7 +40,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5413365201088732281}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99e3a9a3c97a9934bb735dc67fe63540, type: 3}
   m_Name: 
@@ -61,4 +62,35 @@ MonoBehaviour:
   faceT: {fileID: 0}
   activeCustomer: 0
   currentLine: 
+  spawnPos: {x: 2.317, y: 1, z: -2.36}
+  behindCounterPos: {x: 0, y: 0, z: 0}
   currentOptions: {x: 0, y: 0, z: 0}
+--- !u!114 &7797674910287642374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5413365201088732281}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ff7e398d58fd6644ad13159a4435b88, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  JSONParser: {fileID: 0}
+  bodies:
+  - {fileID: 919132149155446097, guid: 7379931702ae6754cbbd2526ea60c969, type: 3}
+  - {fileID: 919132149155446097, guid: e5da35676fca96c4a801bc9d3e1e9844, type: 3}
+  - {fileID: 919132149155446097, guid: 5d405310e9e99b9439ac54eaba95a615, type: 3}
+  faces:
+  - {fileID: 919132149155446097, guid: 27446cf8b3bd6e74dabaa8041c22c7a5, type: 3}
+  - {fileID: 919132149155446097, guid: e4656727f6cefa14f95be3a68e236937, type: 3}
+  - {fileID: 919132149155446097, guid: 503c1cbd44553b543b3092d5a5766d6a, type: 3}
+  customerTemplate: {fileID: 4570510193679052506, guid: 473bbcdeb93da3945a4965ab5b9c15b9,
+    type: 3}
+  activeCustomer: 0
+  currentLine: 
+  spawnTransform: {fileID: 0}
+  behindCounterTransform: {fileID: 0}
+  slideT: 0.1
+  missionStarted: 0

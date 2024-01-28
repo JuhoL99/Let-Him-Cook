@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Oliver3.unity
-    guid: 6a40b4d245f668c45954549f9dfb9f9b
+    path: Assets/Scenes/Main Menu.unity
+    guid: 9cfd47c68d17c094c9fce9c6c1e0193f
+  - enabled: 1
+    path: Assets/Scenes/Main Scene.unity
+    guid: d6cb5841e77dcbf449b75c150459153c
   m_configObjects: {}

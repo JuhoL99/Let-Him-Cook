@@ -7,9 +7,11 @@ public class PickupDrop2 : MonoBehaviour
     [System.NonSerialized] public GameObject pickedUpObject;
     [System.NonSerialized] public Transform pickupSlot;
     [System.NonSerialized] public bool spiceHeld;
+    private SoundFXManager soundManager;
     void Start()
     {
         pickupSlot = transform.GetChild(0).GetChild(0);
+        soundManager = SoundFXManager.instance;
     }
 
     void Update()
@@ -28,6 +30,7 @@ public class PickupDrop2 : MonoBehaviour
     public void PickUp(GameObject go)
     {
         if (pickedUpObject != null) return;
+        soundManager.PlaySoundFX(go.GetComponent<SoundFX>().GetAudioClip());
         pickedUpObject = go;
         Destroy(pickedUpObject.GetComponent<Rigidbody>());
         go.transform.SetParent(pickupSlot);

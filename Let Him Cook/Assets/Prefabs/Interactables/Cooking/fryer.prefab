@@ -272,6 +272,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: -5826130834760891797}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 591f81c2f90047a46b3a102e90d8d6e5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1735878194918722382}
   m_SourcePrefab: {fileID: 100100000, guid: 591f81c2f90047a46b3a102e90d8d6e5, type: 3}
 --- !u!4 &3538145851196468487 stripped
 Transform:
@@ -319,10 +323,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7c36e6813a3a64ebbac89608ccefed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookMethod: 1
-  runtime: 3
+  cookMethod: 2
+  runtime: 5
   launchDirection: {x: 0, y: 1, z: 1}
   cookedMaterial: {fileID: 2100000, guid: f7942f1060e92af44b58bb9464b7050e, type: 2}
+--- !u!114 &1735878194918722382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4202373347958732733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5ccf46b362a474e9d23273ca015de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: f415e3754ca9e6546b6f7edf98e59027, type: 3}
 --- !u!1001 &4450249700010662347
 PrefabInstance:
   m_ObjectHideFlags: 0

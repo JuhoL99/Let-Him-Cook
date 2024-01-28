@@ -231,6 +231,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1406505594477325963}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b65422fc585e6234a963baae7d960035,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8562909242052831846}
   m_SourcePrefab: {fileID: 100100000, guid: b65422fc585e6234a963baae7d960035, type: 3}
 --- !u!1 &8497330799058001635 stripped
 GameObject:
@@ -327,6 +331,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spicedLayerObject: {fileID: 0}
   spiceRend: {fileID: 0}
+--- !u!114 &-8562909242052831846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8497330799058001635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5ccf46b362a474e9d23273ca015de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: d2c2e5ddb4c6e0341a01d19311ef755d, type: 3}
 --- !u!4 &9126340117758657625 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: b65422fc585e6234a963baae7d960035,

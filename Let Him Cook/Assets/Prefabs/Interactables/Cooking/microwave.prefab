@@ -73,7 +73,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f192040d22321ff4f852459e0a43514d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4
+      value: -5.987
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f192040d22321ff4f852459e0a43514d,
         type: 3}
@@ -83,7 +83,7 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: f192040d22321ff4f852459e0a43514d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.75
+      value: -1.16
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: f192040d22321ff4f852459e0a43514d,
         type: 3}
@@ -150,6 +150,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1988616674987547544}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: f192040d22321ff4f852459e0a43514d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8587080085285574263}
   m_SourcePrefab: {fileID: 100100000, guid: f192040d22321ff4f852459e0a43514d, type: 3}
 --- !u!1 &3488191374161971808 stripped
 GameObject:
@@ -190,10 +194,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c7c36e6813a3a64ebbac89608ccefed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cookMethod: 2
-  runtime: 3
+  cookMethod: 0
+  runtime: 5
   launchDirection: {x: 0, y: 1, z: 1}
   cookedMaterial: {fileID: 2100000, guid: 956cc9ae740f577469560bc7632dff9e, type: 2}
+--- !u!114 &8587080085285574263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3488191374161971808}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5ccf46b362a474e9d23273ca015de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 664788783e5cf554a9bd9f9b88552501, type: 3}
 --- !u!4 &4261349995597385946 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f192040d22321ff4f852459e0a43514d,

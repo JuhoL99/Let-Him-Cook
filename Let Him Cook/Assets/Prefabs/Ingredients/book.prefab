@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 2908689397385903753}
   - component: {fileID: 7363669196665367267}
   - component: {fileID: 5147434190221727367}
+  - component: {fileID: -4089040682633177146}
   m_Layer: 3
   m_Name: book
   m_TagString: Interactable
@@ -178,6 +179,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   spicedLayerObject: {fileID: 0}
   spiceRend: {fileID: 0}
+--- !u!114 &-4089040682633177146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8507319948164416003}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c5ccf46b362a474e9d23273ca015de9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: 2200012d3db84324094d4c115fbfb0ab, type: 3}
 --- !u!1001 &8690856238538615381
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -15,12 +15,14 @@ public class CookerBehaviour : MonoBehaviour
     bool running;
     IngredientAttributes ingredientAttributes;
     GameObject objectInside;
+    SoundFXManager soundFXManager;
     void Start()
     {
         pickupScript = GameObject.Find("Player").GetComponent<PickupDrop2>();
         cookPoint = transform.Find("CookPoint");
         spawnPoint = transform.Find("SpawnPoint");
         timer = runtime;
+        soundFXManager = SoundFXManager.instance;
     }
     private void Update()
     {
@@ -37,11 +39,13 @@ public class CookerBehaviour : MonoBehaviour
             objectInside.transform.localPosition = Vector3.zero;
             pickupScript.pickedUpObject = null;
             running = true;
+            soundFXManager.PlaySoundFX(GetComponent<SoundFX>().GetAudioClip());
         }
     }
     void Running()
     {
         if (!running) return;
+
         timer -= Time.deltaTime;
         if (timer < 0)
         {

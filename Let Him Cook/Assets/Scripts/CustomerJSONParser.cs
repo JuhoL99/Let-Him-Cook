@@ -24,6 +24,7 @@ public class CustomerJSONParser : MonoBehaviour
     {
         customersClassObj = JsonUtility.FromJson<Customers>(jsonText.text);
         customers = customersClassObj.customers;
+
     }
 
     void Update()

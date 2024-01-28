@@ -12,6 +12,7 @@ public class CustomerTest : MonoBehaviour
     [SerializeField] private Transform bodyT, faceT;
     [SerializeField] private bool activeCustomer = false;
     [SerializeField] private string currentLine;
+    public Vector3 spawnPos, behindCounterPos;
     public Vector3 currentOptions;
     private void Update()
     {

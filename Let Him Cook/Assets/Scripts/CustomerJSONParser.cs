@@ -22,15 +22,8 @@ public class CustomerJSONParser : MonoBehaviour
     public Customer[] customers;
     void Start()
     {
-        
         customersClassObj = JsonUtility.FromJson<Customers>(jsonText.text);
         customers = customersClassObj.customers;
-        Debug.Log(customers);
-        foreach (Customer customer in customers)
-        {
-            Debug.Log(customer.LINE);
-            Debug.Log(customer.HEIGHT);
-        }
     }
 
     void Update()

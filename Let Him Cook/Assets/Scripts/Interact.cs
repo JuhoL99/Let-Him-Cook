@@ -21,7 +21,7 @@ public class Interact : MonoBehaviour
         Vector3 origin = cam.ScreenToWorldPoint(new Vector3(Screen.width / 2, Screen.height / 2, 0));
         if (Physics.Raycast(origin, cam.transform.forward, out RaycastHit hitInfo, 3f)) 
         {
-            Debug.Log(hitInfo.transform.gameObject.name+"   "+Time.time);
+            //Debug.Log(hitInfo.transform.gameObject.name+"   "+Time.time);
             if (hitInfo.transform.CompareTag("Interactable"))
             {
                 hitInfo.transform.SendMessage("GetInteracted");

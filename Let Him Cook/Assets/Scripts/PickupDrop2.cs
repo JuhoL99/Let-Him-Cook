@@ -6,6 +6,7 @@ public class PickupDrop2 : MonoBehaviour
 {
     [System.NonSerialized] public GameObject pickedUpObject;
     [System.NonSerialized] public Transform pickupSlot;
+    [System.NonSerialized] public bool spiceHeld;
     void Start()
     {
         pickupSlot = transform.GetChild(0).GetChild(0);
@@ -20,8 +21,9 @@ public class PickupDrop2 : MonoBehaviour
         if (!Input.GetKeyDown(KeyCode.F) || pickedUpObject == null) return;
         pickedUpObject.AddComponent<Rigidbody>();
         pickedUpObject.transform.SetParent(null);
-        pickedUpObject.layer = LayerMask.NameToLayer("Default");
+        pickedUpObject.layer = LayerMask.NameToLayer("RigidbodyIngredient");
         pickedUpObject = null;
+        spiceHeld = false;
     }
     public void PickUp(GameObject go)
     {
@@ -30,7 +32,11 @@ public class PickupDrop2 : MonoBehaviour
         Destroy(pickedUpObject.GetComponent<Rigidbody>());
         go.transform.SetParent(pickupSlot);
         go.transform.localPosition = Vector3.zero;
-        go.transform.localRotation = Quaternion.identity;
+        go.transform.localRotation = Quaternion.Euler(-90,0,0);
         go.layer = LayerMask.NameToLayer("Ignore Raycast");
+        if (go.TryGetComponent(out SpiceBehaviour sb))
+        {
+            spiceHeld = true;
+        }
     }
 }
